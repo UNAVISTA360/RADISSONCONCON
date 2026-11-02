@@ -38,18 +38,18 @@
                 Video del Proyecto
             </h2>
             
-            <!-- Contenedor adaptado: aspect-[4/3] en móviles para dar espacio a la interfaz de Drive -->
-            <div class="relative w-full aspect-[4/3] sm:aspect-video rounded-lg md:rounded-xl overflow-hidden shadow-xl bg-gray-900 border border-gray-800">
+            <!-- REPRODUCTOR YOUTUBE (Formato 16:9 perfecto en todas las pantallas) -->
+            <div class="relative w-full aspect-video rounded-lg md:rounded-xl overflow-hidden shadow-xl bg-gray-900 border border-gray-800">
                 <iframe 
-                    src="https://drive.google.com/file/d/1L5vsx3m8E8-363ueaJh--x0FDk3pw328/preview" 
+                    src="https://www.youtube.com/embed/bMw5ju3n3MY?rel=0" 
                     class="absolute top-0 left-0 w-full h-full" 
                     frameborder="0" 
-                    allow="autoplay; fullscreen" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
                 </iframe>
             </div>
 
-            <!-- BOTÓN DESCARGA VIDEO -->
+            <!-- BOTÓN DESCARGA VIDEO (Mantiene link de Drive original) -->
             <a href="https://drive.google.com/drive/folders/1cI8RgSrPblnWuhggozeSWvhw0Dv3b8zs?usp=sharing" target="_blank" class="w-full md:w-auto flex justify-center items-center gap-2 px-6 py-3 bg-gray-100 hover:bg-white text-gray-900 font-medium rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg text-sm md:text-base">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
