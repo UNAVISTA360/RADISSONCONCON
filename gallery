@@ -19,9 +19,9 @@
 
     <!-- HEADER / LOGO -->
     <header class="w-full py-8 flex flex-col items-center justify-center bg-gray-900 shadow-md">
-        <!-- LOGO -->
+        <!-- LOGO LOCAL -->
         <img 
-            src="https://lh3.googleusercontent.com/pw/AP1GczOd7hXTzsx7OicE7a2ZrqmLnci2SQ3HsYgtVF63sKyMcQT5bAeNfdpqaGE6-X9RltRyCvqtju_HhOLvx9iRMuhl7ZzN7mtjFO1kvwUGsLpSUHFGbAM1qeX8ND1m9YYWrDYmlLYmfZgQsJzrr2aCaXDp=w1920-h541-s-no-gm?authuser=1" 
+            src="logo.png" 
             alt="Logo Radisson" 
             class="max-h-20 md:max-h-24 w-auto max-w-[250px] md:max-w-[300px] object-contain mb-4"
         >
@@ -69,19 +69,16 @@
             <div class="relative w-full group">
                 <div id="carousel" class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 hide-scrollbar smooth-scroll">
                     
-                    <!-- FOTO 1 (Local) -->
                     <div class="snap-center shrink-0 w-full md:w-3/4 aspect-[4/3] rounded-xl overflow-hidden bg-gray-800">
                         <img src="foto1.jpg" alt="Foto Radisson 1" class="w-full h-full object-cover">
                     </div>
 
-                    <!-- FOTO 2 (Local) -->
                     <div class="snap-center shrink-0 w-full md:w-3/4 aspect-[4/3] rounded-xl overflow-hidden bg-gray-800">
                         <img src="foto2.jpg" alt="Foto Radisson 2" class="w-full h-full object-cover">
                     </div>
 
-                    <!-- FOTO 3 (Prueba con Google Drive) -->
                     <div class="snap-center shrink-0 w-full md:w-3/4 aspect-[4/3] rounded-xl overflow-hidden bg-gray-800">
-                        <img src="https://drive.google.com/uc?export=view&id=1FWXW4MU2hXDX9YmB68_3U-EXa3QFlpFR" alt="Foto Radisson 3" class="w-full h-full object-cover">
+                        <img src="foto3.jpg" alt="Foto Radisson 3" class="w-full h-full object-cover">
                     </div>
 
                 </div>
