@@ -15,30 +15,32 @@
         }
     </style>
 </head>
-<body class="bg-gray-950 text-white font-sans antialiased min-h-screen flex flex-col">
+<body class="bg-gray-950 text-white font-sans antialiased min-h-screen flex flex-col overflow-x-hidden">
 
     <!-- HEADER / LOGO -->
-    <header class="w-full py-8 flex flex-col items-center justify-center bg-gray-900 shadow-md">
+    <header class="w-full py-6 md:py-8 flex flex-col items-center justify-center bg-gray-900 shadow-md">
+        <!-- LOGO LOCAL -->
         <img 
             src="logo.png" 
             alt="Logo Radisson" 
-            class="max-h-20 md:max-h-24 w-auto max-w-[250px] md:max-w-[300px] object-contain mb-4"
+            class="max-h-16 md:max-h-24 w-auto max-w-[200px] md:max-w-[300px] object-contain mb-3 md:mb-4"
         >
-        <h1 class="text-2xl md:text-3xl font-light tracking-[0.2em] text-gray-300 uppercase text-center px-4">
+        
+        <h1 class="text-xl md:text-3xl font-light tracking-[0.1em] md:tracking-[0.2em] text-gray-300 uppercase text-center px-4 w-full break-words">
             Radisson Concón
         </h1>
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
-    <main class="flex-grow flex flex-col items-center w-full max-w-5xl mx-auto px-4 py-12 space-y-16">
+    <main class="flex-grow w-full max-w-5xl mx-auto px-4 py-8 md:py-12 space-y-12 md:space-y-16">
 
         <!-- SECCIÓN DE VIDEO -->
-        <section class="w-full flex flex-col items-center space-y-6">
-            <h2 class="text-xl md:text-2xl font-semibold text-gray-200 tracking-wide border-b border-gray-700 pb-2">
+        <section class="w-full flex flex-col items-center space-y-4 md:space-y-6">
+            <h2 class="text-lg md:text-2xl font-semibold text-gray-200 tracking-wide border-b border-gray-700 pb-2 text-center">
                 Video del Proyecto
             </h2>
             
-            <div class="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl bg-gray-900 border border-gray-800">
+            <div class="relative w-full aspect-video rounded-lg md:rounded-xl overflow-hidden shadow-xl bg-gray-900 border border-gray-800">
                 <iframe 
                     src="https://drive.google.com/file/d/1L5vsx3m8E8-363ueaJh--x0FDk3pw328/preview" 
                     class="absolute top-0 left-0 w-full h-full" 
@@ -49,8 +51,8 @@
             </div>
 
             <!-- BOTÓN DESCARGA VIDEO -->
-            <a href="https://drive.google.com/drive/folders/1cI8RgSrPblnWuhggozeSWvhw0Dv3b8zs?usp=sharing" target="_blank" class="inline-flex items-center gap-2 px-8 py-3 bg-gray-100 hover:bg-white text-gray-900 font-medium rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <a href="https://drive.google.com/drive/folders/1cI8RgSrPblnWuhggozeSWvhw0Dv3b8zs?usp=sharing" target="_blank" class="w-full md:w-auto flex justify-center items-center gap-2 px-6 py-3 bg-gray-100 hover:bg-white text-gray-900 font-medium rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg text-sm md:text-base">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
                 Descargar Video
@@ -58,40 +60,40 @@
         </section>
 
         <!-- SECCIÓN DE FOTOS -->
-        <section class="w-full flex flex-col items-center space-y-8">
-            <h2 class="text-xl md:text-2xl font-semibold text-gray-200 tracking-wide border-b border-gray-700 pb-2">
+        <section class="w-full flex flex-col items-center space-y-4 md:space-y-8">
+            <h2 class="text-lg md:text-2xl font-semibold text-gray-200 tracking-wide border-b border-gray-700 pb-2 text-center">
                 Galería Fotográfica
             </h2>
 
             <!-- CARRUSEL -->
             <div class="relative w-full group">
-                <div id="carousel" class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 hide-scrollbar smooth-scroll">
+                <div id="carousel" class="flex overflow-x-auto snap-x snap-mandatory gap-3 md:gap-4 pb-4 hide-scrollbar smooth-scroll">
                     
-                    <div class="snap-center shrink-0 w-full md:w-3/4 aspect-[4/3] rounded-xl overflow-hidden bg-gray-800">
+                    <div class="snap-center shrink-0 w-[85%] md:w-3/4 aspect-[4/3] rounded-lg md:rounded-xl overflow-hidden bg-gray-800">
                         <img src="foto1.jpg" alt="Foto Radisson 1" class="w-full h-full object-cover">
                     </div>
 
-                    <div class="snap-center shrink-0 w-full md:w-3/4 aspect-[4/3] rounded-xl overflow-hidden bg-gray-800">
+                    <div class="snap-center shrink-0 w-[85%] md:w-3/4 aspect-[4/3] rounded-lg md:rounded-xl overflow-hidden bg-gray-800">
                         <img src="foto2.jpg" alt="Foto Radisson 2" class="w-full h-full object-cover">
                     </div>
 
-                    <div class="snap-center shrink-0 w-full md:w-3/4 aspect-[4/3] rounded-xl overflow-hidden bg-gray-800">
+                    <div class="snap-center shrink-0 w-[85%] md:w-3/4 aspect-[4/3] rounded-lg md:rounded-xl overflow-hidden bg-gray-800">
                         <img src="foto3.jpg" alt="Foto Radisson 3" class="w-full h-full object-cover">
                     </div>
 
                 </div>
 
-                <button onclick="scrollCarousel(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm hidden md:block">
+                <button onclick="scrollCarousel(-1)" class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-2 md:p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm hidden md:block">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
                 </button>
-                <button onclick="scrollCarousel(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm hidden md:block">
+                <button onclick="scrollCarousel(1)" class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-2 md:p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm hidden md:block">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
                 </button>
             </div>
 
             <!-- BOTÓN DESCARGA FOTOS -->
-            <a href="https://drive.google.com/drive/folders/11sDgTSEHxfeiC-AHmTGNK27FY_Y4YCan?usp=sharing" target="_blank" class="inline-flex items-center gap-2 px-8 py-3 bg-transparent border-2 border-gray-400 hover:border-white text-gray-300 hover:text-white font-medium rounded-full transition-all duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <a href="https://drive.google.com/drive/folders/11sDgTSEHxfeiC-AHmTGNK27FY_Y4YCan?usp=sharing" target="_blank" class="w-full md:w-auto flex justify-center items-center gap-2 px-6 py-3 bg-transparent border-2 border-gray-400 hover:border-white text-gray-300 hover:text-white font-medium rounded-full transition-all duration-300 text-sm md:text-base text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                 </svg>
                 Descargar todas las fotos
@@ -101,7 +103,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="w-full py-6 text-center text-gray-600 text-sm border-t border-gray-900 mt-auto">
+    <footer class="w-full py-6 text-center text-gray-500 text-xs md:text-sm border-t border-gray-900 mt-auto px-4">
         <p>&copy; 2026 Radisson Concón. Todos los derechos reservados.</p>
     </footer>
 
