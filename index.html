@@ -19,13 +19,11 @@
 
     <!-- HEADER / LOGO -->
     <header class="w-full py-6 md:py-8 flex flex-col items-center justify-center bg-gray-900 shadow-md">
-        <!-- LOGO LOCAL -->
         <img 
             src="logo.png" 
             alt="Logo Radisson" 
             class="max-h-16 md:max-h-24 w-auto max-w-[200px] md:max-w-[300px] object-contain mb-3 md:mb-4"
         >
-        
         <h1 class="text-xl md:text-3xl font-light tracking-[0.1em] md:tracking-[0.2em] text-gray-300 uppercase text-center px-4 w-full break-words">
             Radisson Concón
         </h1>
@@ -40,7 +38,8 @@
                 Video del Proyecto
             </h2>
             
-            <div class="relative w-full aspect-video rounded-lg md:rounded-xl overflow-hidden shadow-xl bg-gray-900 border border-gray-800">
+            <!-- Contenedor adaptado: aspect-[4/3] en móviles para dar espacio a la interfaz de Drive -->
+            <div class="relative w-full aspect-[4/3] sm:aspect-video rounded-lg md:rounded-xl overflow-hidden shadow-xl bg-gray-900 border border-gray-800">
                 <iframe 
                     src="https://drive.google.com/file/d/1L5vsx3m8E8-363ueaJh--x0FDk3pw328/preview" 
                     class="absolute top-0 left-0 w-full h-full" 
@@ -86,7 +85,7 @@
                 <button onclick="scrollCarousel(-1)" class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-2 md:p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm hidden md:block">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
                 </button>
-                <button onclick="scrollCarousel(1)" class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-2 md:p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm hidden md:block">
+                <button onclick="scrollCarousel(1)" class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm hidden md:block">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
                 </button>
             </div>
